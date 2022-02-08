@@ -15,13 +15,13 @@ public class Main
 
         Contato cb;
         cb=new Contato("Teste",new GregorianCalendar(1980,10,28));
-        cb.setTelefone(new Telefone("3333-5555","Telefone residencial"));
+        cb.setTelefone(new Telefone("3222-1234","Telefone residencial"));
         cb.setTelefone(new Telefone("99111-1111","Telefone celular"));
         a.inserir(cb);
 
         ContatoComercial cc;
         cc=new ContatoComercial("Lanchonete", "Lanches", "Lan");
-        cc.setTelefone(new Telefone("2222-0000","Telefone residencial"));
+        cc.setTelefone(new Telefone("3200-0000","Telefone residencial"));
         a.inserir(cc);
 
         a.inserir(new EContato("Exemplo",new GregorianCalendar(1975,2,22),
@@ -31,6 +31,6 @@ public class Main
         
         if(obj!=null)
             mostraDados(obj);
-        else System.out.println("Contato nao encontrado!");
+        else System.out.println("Não foi possível achar o contato!");
     }
 }
